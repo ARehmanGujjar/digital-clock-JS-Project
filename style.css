@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  --primary-color: black;
+  --secondary-color: white;
+}
+.dark-mode {
+--primary-color:white;
+--secondary-color:black;
+}
+
+/* utils classes */
+.text-center {
+  text-align: center;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* styling elements */
+.clock {
+  height: 300px;
+  font-family: var(--font);
+}
+.dots {
+  font-size: 5em;
+}
+.lg-box {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  margin: 5px 5px;
+
+  font-size: 4rem;
+}
+.sm-box {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  margin: 5px 5px;
+  font-size: 2rem;
+}
+.date {
+  height: 50px;
+  width: 20rem;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: yellow;
+  color: black;
+  box-shadow: 5px 10px rgb(241, 228, 46);
+}
+.btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 50px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 5px;
+  color:white;
+  background-color: black;
+}
+.footer {
+  width: 100%;
+  margin-top: 130px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+
+
+}
+h1 {
+  margin-top: 80px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+
+}
+
+/* responsiveness for smart watches */
+@media only screen and (max-width: 300px) {
+
+h1{
+  margin-top: 30px;
+  font-size:0.8rem;
+}
+.btn{
+  top:1px;
+  right:1px;
+  width:20px;
+  height:20px;
+}
+.lg-box{
+  height:4em;
+  width:4em;
+  font-size: large;
+}
+.sm-box{
+  height:3em;
+  width:3em;
+  font-size: small;
+}
+.dots{
+  font-size: 2rem;
+}
+.date{
+  width:8rem;
+  height:3rem;
+  padding:3px;
+}
+.clock{
+  height:100px;
+}
+.footer{
+  margin-top:30px;
+  font-size:1rem;
+}
+}
+@media only screen and (min-width:700px) {
+
+  .footer{
+    margin-top:240px;
+  }
+  
+}
